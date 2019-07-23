@@ -1,5 +1,4 @@
 FROM node:latest
-
 WORKDIR /discord
-CMD ["npm", "install"]
-RUN node src/bot.js
+RUN npm install
+CMD ["node", "src/bot.js"]
